@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://mapi.canadiantire.ca/" />
+<title>view_1_make_selectbox</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">view_1_make_selectbox</td></tr>
+</thead><tbody>
+<!--"MAKE" value is empty by default-->
+<tr>
+	<td>verifyText</td>
+	<td>css=#make option[selected]</td>
+	<td></td>
+</tr>
+<!--"MAKE" value is ALFA ROMEO after user selects it-->
+<tr>
+	<td>select</td>
+	<td>css=#make</td>
+	<td>label=ALFA ROMEO</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#make option[selected]</td>
+	<td>ALFA ROMEO</td>
+</tr>
+<!--"MAKE" value is VOLVO after user selects it-->
+<tr>
+	<td>select</td>
+	<td>css=#make</td>
+	<td>label=VOLVO</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=#make option[selected]</td>
+	<td>VOLVO</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
