@@ -11,71 +11,41 @@
 <thead>
 <tr><td rowspan="1" colspan="3">view_1</td></tr>
 </thead><tbody>
-<!--the following web elements should be present in this state-->
+<!--english - open autoparts english url-->
 <tr>
 	<td>open</td>
-	<td>http://mapi.canadiantire.ca/AutoSelectors/#/config/0022/en/180/2/19/V/10</td>
+	<td>http://stagemapi2.canadiantire.ca/autopartfinder/#/config/0022/en/jndwef</td>
 	<td></td>
 </tr>
+<!--text above web buttons is: SELECT YOUR AUTO PART-->
 <tr>
 	<td>verifyText</td>
-	<td>css=.panel-heading.text-uppercase.ng-binding</td>
-	<td>VEHICLE INFORMATION</td>
+	<td>css=.launcher-title.ng-binding</td>
+	<td>SELECT YOUR AUTO PART:</td>
 </tr>
-<tr>
-	<td>verifyText</td>
-	<td>css=label.text-uppercase.ng-binding</td>
-	<td>year</td>
-</tr>
+<!--FR web button is present at top left corner-->
 <tr>
 	<td>verifyElementPresent</td>
-	<td>id=year</td>
-	<td></td>
+	<td>css=div&gt;img</td>
+	<td>assets/img/ct-autoselector-2015-fr-button.png</td>
 </tr>
-<tr>
-	<td>assertNotEditable</td>
-	<td>css=div.panelbutton-grp</td>
-	<td>Search</td>
-</tr>
+<!--launcher icon is a battery-->
 <tr>
 	<td>verifyElementPresent</td>
-	<td>css=.glyphicon.glyphicon-search.pull-left.panelbutton-icon</td>
+	<td>css=.launcher-icon-image</td>
 	<td></td>
 </tr>
-<tr>
-	<td>assertEditable</td>
-	<td>//button[@type='reset']</td>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>css=.glyphicon.glyphicon-remove.pull-left.panelbutton-icon</td>
-	<td></td>
-</tr>
+<!--big intro tile is set to battery on page load-->
 <tr>
 	<td>verifyText</td>
-	<td>css=.intro-title.title-glow.ng-binding</td>
-	<td>Find the right</td>
+	<td>css=.big-intro-title.ng-binding</td>
+	<td>FIND THE RIGHT BATTERY FOR YOUR VEHICLE</td>
 </tr>
+<!--small intro title is: Select your vehicle year, make and model to find the right fit.-->
 <tr>
 	<td>verifyText</td>
-	<td>css=.big-intro-title.title-glow.ng-binding</td>
-	<td>SPARK PLUGS</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>css=.intro-title-bottom.title-glow.ng-binding</td>
-	<td>for your vehicle</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>css=.alt-title.title-glow.ng-binding</td>
+	<td>css=.alt-title.ng-binding</td>
 	<td>Select your vehicle year, make and model to find the right fit.</td>
-</tr>
-<tr>
-	<td>verifyElementPresent</td>
-	<td>//div[@bg-img='http://s7d5.scene7.com/is/image/CanadianTire/auto-selector-iwall-april2015-Spark-Plug?wid=1200&amp;hei=1137&amp;qlt=90']</td>
-	<td></td>
 </tr>
 </tbody></table>
 </body>
