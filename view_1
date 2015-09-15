@@ -14,7 +14,7 @@
 <!--english - open autoparts english url-->
 <tr>
 	<td>open</td>
-	<td>http://stagemapi2.canadiantire.ca/autopartfinder/#/config/0022/en/jndwef</td>
+	<td>http://stagemapi2.canadiantire.ca/autopartfinder/#/config/0022/en/0050563FFFED</td>
 	<td></td>
 </tr>
 <!--text above web buttons is: SELECT YOUR AUTO PART-->
@@ -49,11 +49,6 @@
 </tr>
 <!--6 web buttons (battery, carriers & racks, filter, light bulbs, spark plugs, wiper blades) are present-->
 <tr>
-	<td>click</td>
-	<td>css=img.pull-left.center-icon</td>
-	<td></td>
-</tr>
-<tr>
 	<td>verifyText</td>
 	<td>//li[1]/div/span</td>
 	<td>BATTERY</td>
@@ -70,37 +65,37 @@
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//li[3]/div/span</td>
+	<td>//li[4]/div/span</td>
 	<td>LIGHT BULBS</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//li[3]/div/span</td>
+	<td>//li[5]/div/span</td>
 	<td>SPARK PLUGS</td>
 </tr>
 <tr>
 	<td>verifyText</td>
-	<td>//li[3]/div/span</td>
+	<td>//li[6]/div/span</td>
 	<td>WIPER BLADES</td>
 </tr>
 <!--start french tests-->
 <!--french - open autoparts french url-->
 <tr>
 	<td>open</td>
-	<td>http://stagemapi2.canadiantire.ca/autopartfinder/#/config/0022/fr/jndwef</td>
+	<td>http://stagemapi2.canadiantire.ca/autopartfinder/#/config/0022/fr/0050563FFFED</td>
 	<td></td>
 </tr>
 <!--text above web buttons is: SELECT YOUR AUTO PART-->
 <tr>
 	<td>verifyText</td>
 	<td>css=.launcher-title.ng-binding</td>
-	<td>SELECT YOUR AUTO PART:</td>
+	<td>FR_SELECT YOUR AUTO PART:</td>
 </tr>
 <!--FR web button is present at top left corner-->
 <tr>
 	<td>verifyElementPresent</td>
 	<td>css=div&gt;img</td>
-	<td>assets/img/ct-autoselector-2015-fr-button.png</td>
+	<td>assets/img/ct-autoselector-2015-en-button.png</td>
 </tr>
 <!--launcher icon is a battery-->
 <tr>
@@ -111,50 +106,50 @@
 <!--big intro tile is set to battery on page load-->
 <tr>
 	<td>verifyText</td>
-	<td>css=.big-intro-title.ng-binding</td>
-	<td>FIND THE RIGHT BATTERY FOR YOUR VEHICLE</td>
+	<td>//div[2]/div[2]</td>
+	<td>TROUVEZ LA BONNE BATTERIE POUR VOTRE VÉHICULE</td>
 </tr>
 <!--small intro title is: Select your vehicle year, make and model to find the right fit.-->
 <tr>
 	<td>verifyText</td>
-	<td>css=.alt-title.ng-binding</td>
-	<td>Select your vehicle year, make and model to find the right fit.</td>
+	<td>//div[4]</td>
+	<td>Sélectionnez l’année, la marque et le modèle de votre véhicule pour trouver les articles qui conviennent</td>
 </tr>
 <!--6 web buttons (battery, carriers & racks, filter, light bulbs, spark plugs, wiper blades) are present-->
 <tr>
-	<td>click</td>
-	<td>css=img.pull-left.center-icon</td>
+	<td>verifyText</td>
+	<td>//li[1]/div/span[2]</td>
+	<td>BATTERIE</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//li[2]/div/span[2]</td>
+	<td>COFFRES ET PORTE-BAGAGES</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//li[3]/div/span[2]</td>
+	<td>FILTRE</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//li[4]/div/span[2]</td>
+	<td>AMPOULES</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//li[5]/div/span[2]</td>
+	<td>BOUGIES D’ALLUMAGE</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//li[6]/div/span[2]</td>
+	<td>BALAIS D'ESSUIE-GLACE</td>
+</tr>
+<tr>
 	<td></td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//li[1]/div/span</td>
-	<td>BATTERY</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//li[2]/div/span</td>
-	<td>CARRIERS &amp; RACKS</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//li[3]/div/span</td>
-	<td>FILTER</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//li[3]/div/span</td>
-	<td>LIGHT BULBS</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//li[3]/div/span</td>
-	<td>SPARK PLUGS</td>
-</tr>
-<tr>
-	<td>verifyText</td>
-	<td>//li[3]/div/span</td>
-	<td>WIPER BLADES</td>
+	<td></td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>
