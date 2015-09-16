@@ -22,6 +22,11 @@
 	<td>//div[2]/div</td>
 	<td>3000</td>
 </tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=.modal-content</td>
+	<td></td>
+</tr>
 <!--popup has title of: DEVICE INFORMATION-->
 <tr>
 	<td>verifyText</td>
