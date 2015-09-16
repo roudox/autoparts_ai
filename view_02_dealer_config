@@ -18,7 +18,7 @@
 	<td>2000</td>
 </tr>
 <tr>
-	<td>mouseDownAndWait</td>
+	<td>mouseDown</td>
 	<td>//div[2]/div</td>
 	<td>3000</td>
 </tr>
@@ -28,7 +28,7 @@
 	<td>css=h4.text-center</td>
 	<td>Device Information</td>
 </tr>
-<!--popup has text of: STORE NUMBER:${store_number}-->
+<!--popup has text of: STORE NUMBER: ${store_number}-->
 <tr>
 	<td>verifyText</td>
 	<td>css=p.ng-binding</td>
@@ -46,7 +46,7 @@
 	<td>css=p.ng-binding + p + p</td>
 	<td>Version: ${version_number}</td>
 </tr>
-<!--popup has text of: MAC ADDRESS:${mac_address}-->
+<!--popup has text of: MAC ADDRESS: ${mac_address}-->
 <tr>
 	<td>verifyText</td>
 	<td>css=div.col-md-6 + div p.ng-binding</td>
