@@ -45,11 +45,48 @@
 	<td>css=form h3</td>
 	<td>Please Select Categories</td>
 </tr>
+<!--device_config has lablels on left: (BATTERY, CARRIERS & RACKS, FILTER, LIGHT BULBS, SPARK PLUGS, WIPER BLADES)-->
+<tr>
+	<td>verifyText</td>
+	<td>css=div label.ng-binding</td>
+	<td>BATTERY</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=form div:nth-of-type(2) label.ng-binding</td>
+	<td>CARRIERS &amp; RACKS</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=form div:nth-of-type(3) label.ng-binding</td>
+	<td>FILTER</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=form div:nth-of-type(4) label.ng-binding</td>
+	<td>LIGHT BULBS</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=form div:nth-of-type(5) label.ng-binding</td>
+	<td>SPARK PLUGS</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=form div:nth-of-type(6) label.ng-binding</td>
+	<td>WIPER BLADES</td>
+</tr>
 <!--device_config has h3_title: Please Enter Aisle Location-->
 <tr>
 	<td>verifyText</td>
 	<td>css=form h3:nth-of-type(2)</td>
 	<td>Please Enter Aisle Location</td>
+</tr>
+<!--device_config has h3_title: Input Field-->
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=input.ng-pristine.ng-untouched.ng-valid.ng-valid-minlength.ng-valid-maxlength</td>
+	<td></td>
 </tr>
 <!--device_config has h3_title: Present Categories-->
 <tr>
@@ -57,17 +94,53 @@
 	<td>css=.col-md-4.ng-binding h3</td>
 	<td>Present Categories</td>
 </tr>
+<!--device_config has list elements on right: (BATTERY, CARRIERS & RACKS, FILTER, LIGHT BULBS, SPARK PLUGS, WIPER BLADES)-->
+<tr>
+	<td>verifyText</td>
+	<td>css=ul li</td>
+	<td>BATTERY</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=ul li:nth-of-type(2)</td>
+	<td>CARRIERS &amp; RACKS</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=ul li:nth-of-type(3)</td>
+	<td>FILTER</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=ul li:nth-of-type(4)</td>
+	<td>LIGHT BULBS</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=ul li:nth-of-type(5)</td>
+	<td>SPARK PLUGS</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=ul li:nth-of-type(6)</td>
+	<td>WIPER BLADES</td>
+</tr>
 <!--device_config has ul_title: Aisle Location:-->
 <tr>
 	<td>verifyElementPresent</td>
 	<td>css=div.col-md-4.ng-binding:contains('Aisle Location:')</td>
 	<td></td>
 </tr>
-<!--device_config has lablel: BATTERY-->
+<!--device_config has web buttons: (Submit Query, Cancel)-->
 <tr>
-	<td>verifyText</td>
-	<td>css=form h3</td>
-	<td>Please Select Categories</td>
+	<td>verifyElementPresent</td>
+	<td>css=input.btn.btn-primary.btn-lg</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=.btn.btn-danger.btn-lg</td>
+	<td></td>
 </tr>
 
 </tbody></table>
